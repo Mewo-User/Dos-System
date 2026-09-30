@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOS Terminal</title>
+  <style>
+    body {
+      background-color: black;
+      color: #00ff00; /* Classic green screen */
+      font-family: "Courier New", Courier, monospace;
+      padding: 20px;
+    }
+    #output {
+      white-space: pre-wrap;
+    }
+    .input-line {
+      display: flex;
+    }
+    #cmd {
+      background: transparent;
+      border: none;
+      color: #00ff00;
+      font-family: inherit;
+      font-size: inherit;
+      outline: none;
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="output">MS-DOS Version 6.22
+(C)Copyright Microsoft Corp 1981-1994.
+
+Type "HELP" or "DIR" to start.
+</div>
+
+  <div class="input-line">
+    <span>C:\>&nbsp;</span>
+    <input type="text" id="cmd" autofocus>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
